@@ -8,8 +8,6 @@
     <style>
         * {
             box-sizing: border-box;
-            background-color: rgb(24 109 238);
-            color: #ffffff;
         }
 
         body {
@@ -18,7 +16,7 @@
 
         /* Estilo de header */
         header {
-            background-color: #666;
+            background-color: #1a73e8;
             padding: 30px;
             text-align: center;
             font-size: 35px;
@@ -75,43 +73,70 @@
         .lista img{
             max-width: 300px;
         }
+        .lista ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style:none
+}
+.lista li {
+    padding: 10px;
+}
+footer li {
+    list-style: none;
+}
+header img {
+    max-width: 200px;
+}
+
     </style>
 </head>
 <body>
+<header>
+<img class="logo" src="https://cdn.pixabay.com/photo/2016/11/18/15/46/birthday-1835443_1280.jpg"/>
     <!-- Headings -->
     <h1>Rocket Cakes</h1>
     <h2>Speed light Cakes</h2>
+</header>
+
+
 <div class="adornos lista">
   <h3>Tenemos una excelente selección de adornos de pasteles</h3>
         <ul>
 <li>
     <p>Cumpleaños</p>
+    <p class="Price">$300.00 MXN</p>
     <img src="https://cdn.pixabay.com/photo/2016/11/18/15/46/birthday-1835443_1280.jpg"/>
 </li>
 <li>
     <p>Infantil</p>
+    <p class="Price">$320.00 MXN</p>
     <img src="https://cdn.pixabay.com/photo/2014/12/30/00/05/festival-583442_1280.jpg"/>
 </li>
 <li>
     <p>Boda</p>
+    <p class="Price">$500.00 MXN</p>
     <img src="https://cdn.pixabay.com/photo/2019/01/10/19/36/valentine-3925931_1280.jpg"/>
 </li>
 </ul>
 </div>
 <div class="sabores lista">
-  <h3>Nuestros sabores</h3>
+  <h3>Selecciona uno de nuestros sabores</h3>
         <ul>
 <li>
     <p>Tres leches</p>
+    <p class="Price">$100.00 MXN</p>
     <img src="https://cdn.pixabay.com/photo/2016/11/18/15/46/birthday-1835443_1280.jpg"/>
 </li>
 <li>
     <p>Zanahoria</p>
-    <img src="https://cdn.pixabay.com/photo/2014/12/30/00/05/festival-583442_1280.jpg"/>
+    <p class="Price">$200.00 MXN</p>
+    <img src="https://cdn.pixabay.com/photo/2020/02/29/15/20/cake-4890393_1280.jpg"/>
 </li>
 <li>
     <p>Chocolate</p>
-    <img src="https://cdn.pixabay.com/photo/2019/01/10/19/36/valentine-3925931_1280.jpg"/>
+    <p class="Price">$200.00 MXN</p>
+    <img src="https://cdn.pixabay.com/photo/2016/11/22/18/52/cake-1850011_1280.jpg"/>
 </li>
 <li>
     <p>Mil hojas</p>
