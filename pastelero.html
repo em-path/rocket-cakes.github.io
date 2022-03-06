@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Cakes - Speed Light Cakes</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #1a73e8;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: rgb(24, 109, 238);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+       
+.lista li {
+    padding: 10px;
+}
+footer li {
+    list-style: none;
+}
+header img {
+    max-width: 200px;
+}
+
+    </style>
+</head>
+<body>
+<header>
+<img class="logo" src="https://cdn.pixabay.com/photo/2016/11/18/15/46/birthday-1835443_1280.jpg"/>
+    <!-- Headings -->
+    <h1>Página de Pedidos</h1>
+    <h2>Speed light Cakes</h2>
+</header>
+
+
+<div class="adornos lista">
+  <h3>Adornos de pasteles</h3>
+        <ul>
+<li>
+    <p>Cumpleaños</p>
+    <p class="Price">Quedan 18</p>
+   
+</li>
+<li>
+    <p>Infantil</p>
+    <p class="Price">Quedan 20</p>
+</li>
+<li>
+    <p>Boda</p>
+
+    <p class="Price">Quedan 5</p></li>
+</ul>
+</div>
+<div class="sabores lista">
+  <h3>Sabores restantes</h3>
+        <ul>
+<li>
+    <p>Tres leches</p>
+    <p class="Price">Quedan 4</p>
+    </li>
+<li>
+    <p>Zanahoria</p>
+    <p class="Price">Quedan 5</p>
+   </li>
+<li>
+    <p>Chocolate</p>
+    <p class="Price">Quedan 10</p>
+   </li>
+<li>
+    <p>Mil hojas</p>
+    <p class="Price">Quedan 0</p>
+  </li>
+</div>
+<div>
+    <table>
+        <thead>
+          <tr>
+            <th>No. Pedido<br></th>
+            <th>Nombre</th>
+            <th>Teléfono</th>
+            <th>Email</th>
+            <th>Adorno</th>
+            <th>Sabor</th>
+            <th>Descripcion de pastel<br></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Joe</td>
+            <td>9999999999</td>
+            <td>joe@doe.com<br></td>
+            <td>Cumpleaños</td>
+            <td>Chocolate</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Diana</td>
+            <td>999999999</td>
+            <td>joe@doe.com</td>
+            <td>Infantil</td>
+            <td>Tres leches</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Ismael</td>
+            <td>9999999</td>
+            <td>joe@doe.com</td>
+            <td>Boda</td>
+            <td> Mil Hojas</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Alejandra</td>
+            <td>999999999</td>
+            <td>joe@doe.com</td>
+            <td>Infantil</td>
+            <td>Chocolate</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Sandra<br></td>
+            <td>9999999</td>
+            <td>joe@doe.com</td>
+            <td>Infantil</td>
+            <td>Zanahoria</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>6<br></td>
+            <td>Toño</td>
+            <td>999999999</td>
+            <td>joe@doe.com</td>
+            <td>Infantil</td>
+            <td>Chocolate</td>
+            <td></td>
+          </tr>
+        </tbody>
+        </table>
+
+</div>
+<footer>
+<h3>¡Contáctanos, estamos cerca de tí!</h3> 
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59603.04412807261!2d-89.64412215229741!3d20.98500923425719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5676b816452765%3A0xcc4e4f827086f8f1!2sTere%20Cazola!5e0!3m2!1ses!2smx!4v1646597116745!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <ul>
+        <li>Dirección: 265 Gerald L. Bates Drive, Quincy, MS </li>
+        <li>Teléfono <a href="tel:999999999">999-99-99-99</a></li>
+        <li>Horarios de atención: L-V 08 AM - 10 PM</li>
+    </ul>
+</footer>
+</body>
+</html>
